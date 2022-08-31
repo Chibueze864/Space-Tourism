@@ -1,0 +1,159 @@
+.menu-div {
+  margin-bottom: 2vh;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  /* background-color: #ffffff; */
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dot:active::after{
+  background-color: rgba(255,255,255,1);
+
+}
+@media only screen and (min-width: 1024px) {
+  .crew-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 5vh;
+  }
+  .crew-info {
+    display: flex;
+    flex-direction: column;
+    /* width: 33vw; */
+    text-align: left;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    width: 40vw;
+  }
+  .crew-pic {
+    display: flex;
+    position: fixed;
+    margin-left: 60vw;
+    bottom: 0;
+  }
+  .crew-pic img {
+    max-width: 67%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #meet {
+    margin-bottom: 7.5vh;
+    font-weight: 500;
+    text-align: left;
+  }
+  #title {
+    margin-bottom: 1vh;
+    font-size: 1rem;
+  }
+  #title h2 {
+    font-weight: 400;
+  }
+  #name {
+    margin-bottom: 10vh;
+    font-size: 1.5rem;
+    font-weight: 1200;
+  }
+
+  .crew-description {
+    margin-bottom: 9vh;
+  }
+  .dot {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1022px) {
+  .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    gap: 10px;
+    margin-bottom: 0vh;
+  }
+  .crew-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    height: 100%;
+  }
+  .crew-description {
+    margin-bottom: 2.5vh;
+    width: 50vw;
+  }
+  .crew-pic img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+  #meet {
+    position: fixed;
+    margin-left: 2vw;
+    left: 2vw;
+  }
+  #name {
+    margin-bottom: 3vh;
+    font-size: 0.9rem;
+  }
+  #title {
+    margin-bottom: 1vh;
+    font-size: 0.75rem;
+    margin-top: 6vh;
+  }
+  .crew-info {
+    text-align: center;
+  }
+  .crew-description {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .crew-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    /* top: 2vh; */
+  }
+ #meet{
+   margin-bottom: 1vh;
+ }
+  #name {
+    font-size: 0.75rem;
+  }
+  .crew-description {
+    display: flex;
+    place-items: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .crew-pic {
+    display: grid;
+    margin-bottom: 3vh;
+    z-index: 1;
+    place-items: center;
+  }
+  .crew-pic img {
+    max-width: 33%;
+    height: auto;
+    object-fit: contain;
+  }
+  .dot {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}

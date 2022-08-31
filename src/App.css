@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;1,100&family=Kumbh+Sans&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  color: #ffffff;
+  font-family: "Barlow", sans-serif;
+}
+
+.page-content {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+}
+.info-content {
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  text-align: left;
+}
+#space {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 7.5rem;
+}
+.prompt {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5rem;
+  background-color: #ffffff;
+  margin-top: 5rem;
+  margin-right: 1rem;
+}
+.prompt * {
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .prompt {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-top: 10vh;
+    margin-right: 1rem;
+  }
+  .page-content {
+    display: grid;
+    place-items: center;
+    margin-top: 10vh;
+  }
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #space {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+  h5 {
+    font-size: 0.6rem;
+  }
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: left;
+  }
+}
